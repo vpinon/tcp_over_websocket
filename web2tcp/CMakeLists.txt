@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+project(webtcpproxy)
+find_package(Qt5 REQUIRED COMPONENTS Core WebSockets Network)
+set(CMAKE_AUTOMOC ON)
+add_executable(web2tcp web2tcp.cpp)
+qt5_use_modules(web2tcp Core WebSockets Network)
